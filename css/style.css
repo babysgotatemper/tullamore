@@ -1,0 +1,841 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 19, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/reset.scss */
+body {
+  line-height: 1; }
+
+/* line 22, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 25, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 29, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+/* line 34, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/reset.scss */
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 38, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 42, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/reset.scss */
+a {
+  color: inherit;
+  text-decoration: none; }
+
+@font-face {
+  font-family: 'FranklinGothicMediCondC';
+  src: url("../fonts/franklingothicmedicondc.eot");
+  src: url("../fonts/franklingothicmedicondc.eot?#iefix") format("embedded-opentype"), url("../fonts/franklingothicmedicondc.woff2") format("woff2"), url("../fonts/franklingothicmedicondc.woff") format("woff"), url("../fonts/franklingothicmedicondc.ttf") format("truetype"), url("franklingothicmedicondc.svg#franklingothicmedicondcRg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BaskervilleCyrillic';
+  src: url("../fonts/baskervilleazpsnormal-italic.eot");
+  src: url("../fonts/baskervilleazpsnormal-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/baskervilleazpsnormal-italic.woff2") format("woff2"), url("../fonts/baskervilleazpsnormal-italic.woff") format("woff"), url("../fonts/baskervilleazpsnormal-italic.ttf") format("truetype"), url("../fonts/baskervilleazpsnormal-italic.svg#baskerville_a.z_psnormalIt") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+/* line 32, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.flexbox, .age-warning, nav, .block1 .rules {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center; }
+
+/* line 47, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+body {
+  min-width: 1280px;
+  font-family: FranklinGothicMediCondC;
+  color: #939393;
+  font-size: 24px;
+  line-height: 2; }
+
+/* line 56, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.age-warning {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #133c2c url(../images/popup-age.jpg) center no-repeat;
+  color: #fcf9d7;
+  flex-direction: column; }
+  /* line 69, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .age-warning hr {
+    width: 600px;
+    margin: 20px 0; }
+  /* line 74, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .age-warning ul li {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    text-transform: uppercase;
+    border: 2px solid #fcf9d7;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 75px;
+    margin: 0 15px;
+    cursor: pointer; }
+
+/* line 89, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+h2 {
+  color: #e2ddcf;
+  font: 400 30px / 1 FranklinGothicMediCondC;
+  text-align: center;
+  padding: 20px 0 10px;
+  text-transform: uppercase; }
+  /* line 95, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  h2 span {
+    display: block;
+    font-size: 12px; }
+
+/* line 101, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 777;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -250px; }
+
+/* line 110, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.toTop {
+  z-index: 666;
+  display: block;
+  position: fixed;
+  right: 20px;
+  bottom: -200px;
+  width: 70px;
+  height: 70px;
+  background: url(../images/i/btt_button-01.png) center no-repeat;
+  background-size: contain; }
+  /* line 120, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .toTop.active {
+    bottom: 20px; }
+
+/* line 125, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vgorode {
+  position: absolute;
+  overflow: hidden;
+  z-index: 555;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  width: 100%;
+  min-width: 1280px;
+  background-color: #fff; }
+  /* line 136, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .vgorode > a img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    right: 50%;
+    margin-right: -400px; }
+  /* line 143, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .vgorode > a:first-child img {
+    height: 25px;
+    margin: 2px 0;
+    left: 50%;
+    margin-left: -550px; }
+  /* line 149, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .vgorode ul {
+    position: absolute;
+    right: 50%;
+    margin-right: -550px;
+    top: 0; }
+    /* line 154, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .vgorode ul li {
+      background: url(http://special.test.umh.ua/12345/vg-sprite.png) 10px top no-repeat;
+      display: inline-block;
+      width: 60px;
+      height: 35px; }
+      /* line 159, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+      .vgorode ul li:last-child {
+        background-position: -60px top; }
+      /* line 162, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+      .vgorode ul li a {
+        width: 100%;
+        height: 100%;
+        display: block; }
+
+/* line 172, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+nav {
+  position: absolute;
+  z-index: 666;
+  overflow: hidden;
+  top: 30px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  min-width: 1280px;
+  height: 85px;
+  box-sizing: border-box;
+  background-color: #133c2c;
+  color: #f2f2d0;
+  font: 400 18px FranklinGothicMediCondC;
+  text-transform: uppercase; }
+  /* line 188, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  nav a {
+    border: 1px solid #c69c6d;
+    border-left: none;
+    border-right: none;
+    margin: 0 25px;
+    padding: 16px 25px;
+    box-sizing: border-box; }
+    /* line 195, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    nav a:nth-child(3) {
+      border: none;
+      line-height: 1;
+      padding: 0 25px; }
+      /* line 199, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+      nav a:nth-child(3):hover {
+        line-height: 1;
+        padding: 0 25px; }
+    /* line 204, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    nav a:hover {
+      padding: 10px 25px; }
+  /* line 208, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  nav.active {
+    position: fixed;
+    top: 0; }
+
+/* line 215, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.block1 {
+  position: relative;
+  background: url(../images/bg-block1.jpg) center 35% no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 40vh 0 10vh;
+  width: 100%;
+  height: 800px;
+  min-height: 768px;
+  height: 100vh;
+  box-sizing: border-box; }
+  /* line 226, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .block1:before {
+    z-index: 111;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+  /* line 236, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .block1 .rules {
+    position: relative;
+    z-index: 222;
+    color: #ac9866;
+    margin: auto;
+    width: 1167px;
+    height: 70px;
+    font: 400 18px / 18px FranklinGothicMediCondC;
+    text-transform: uppercase;
+    border: 1px solid #ac9866;
+    border-left: none;
+    border-right: none; }
+    /* line 249, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .block1 .rules li {
+      display: inline-block;
+      text-align: center;
+      padding: 10px 0 10px 65px; }
+      /* line 253, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+      .block1 .rules li span {
+        display: block;
+        font-size: 12px; }
+      /* line 257, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+      .block1 .rules li:nth-child(1) {
+        background: url(../images/rules1.png) left center no-repeat; }
+      /* line 260, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+      .block1 .rules li:nth-child(2) {
+        background: url(../images/rules2.png) left center no-repeat;
+        margin: 0 150px; }
+      /* line 264, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+      .block1 .rules li:nth-child(3) {
+        background: url(../images/rules3.png) left center no-repeat; }
+
+/* line 271, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.btn-participate {
+  position: relative;
+  z-index: 222;
+  display: block;
+  background-color: #ac9866;
+  cursor: pointer;
+  width: 277px;
+  margin: 5vh auto 3vh !important;
+  color: #133c2c;
+  font: 400 24px/61px FranklinGothicMediCondC;
+  text-align: center;
+  text-transform: uppercase;
+  border: none; }
+
+/* line 286, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.list, .prises, footer .rules {
+  width: 900px;
+  margin: auto;
+  color: #d8cfb7;
+  font-size: 18px;
+  line-height: 1.5;
+  list-style-image: url(../images/i/Rectangle-2.png);
+  list-style-position: inside; }
+  /* line 295, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .list li, .prises li, footer .rules li {
+    margin: 15px 0; }
+
+/* line 300, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.prises {
+  position: relative;
+  z-index: 222; }
+  /* line 304, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .prises li:first-child {
+    color: #e0d8c4;
+    font: 400 18px / 1 FranklinGothicMediCondC;
+    text-transform: uppercase;
+    list-style: none; }
+
+/* line 312, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.bgvideo {
+  position: relative;
+  height: 75vh;
+  overflow: hidden;
+  transition: height .5s; }
+  /* line 317, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .bgvideo.active {
+    height: 100vh; }
+  /* line 320, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .bgvideo video {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  /* line 328, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .bgvideo a {
+    cursor: pointer;
+    position: absolute;
+    z-index: 555;
+    bottom: 20px;
+    right: 50%;
+    margin-right: -25px;
+    background: url(../images/unmute.jpg) center no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px; }
+    /* line 339, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .bgvideo a.active {
+      background: url(../images/mute.jpg) center no-repeat;
+      background-size: contain; }
+
+/* line 357, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+#block2 {
+  position: absolute;
+  bottom: 85px;
+  width: 100%;
+  height: 1px;
+  z-index: 999; }
+
+/* line 365, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.articles-nav {
+  width: 100%;
+  height: 972px;
+  overflow: hidden; }
+  /* line 369, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .articles-nav iframe {
+    overflow: hidden;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 972px;
+    overflow: hidden; }
+
+/* line 382, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.block2 {
+  height: 972px;
+  overflow: hidden; }
+
+/* line 387, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.block2 > div {
+  background-color: #000;
+  background-size: 100%;
+  width: 100%;
+  height: 972px; }
+  /* line 393, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .block2 > div .grid-item {
+    position: relative;
+    vertical-align: bottom;
+    width: 25%;
+    height: 324px;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    color: #ac9866;
+    text-transform: uppercase;
+    font: 400 18px / 18px FranklinGothicMediCondC;
+    opacity: .9;
+    outline: none; }
+    /* line 405, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .block2 > div .grid-item span {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.81);
+      padding: 10px;
+      box-sizing: border-box;
+      box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.81); }
+    /* line 417, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .block2 > div .grid-item:hover {
+      opacity: 1; }
+      /* line 420, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+      .block2 > div .grid-item:hover span {
+        opacity: 1; }
+    /* line 424, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .block2 > div .grid-item.w2 {
+      width: 50%; }
+    /* line 427, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .block2 > div .grid-item.w4 {
+      width: 100%; }
+    /* line 430, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .block2 > div .grid-item.h2 {
+      height: 648px; }
+    /* line 433, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .block2 > div .grid-item.empty {
+      background: url(../images/bg-block2.jpg) center no-repeat;
+      background-size: cover;
+      opacity: 0.3; }
+    /* line 438, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .block2 > div .grid-item.logo {
+      padding-top: 120px;
+      background-color: #133c2c;
+      text-align: center;
+      font: 400 18px / 16px FranklinGothicMediCondC; }
+      /* line 443, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+      .block2 > div .grid-item.logo > * {
+        display: block;
+        margin: auto;
+        font: 400 12px FranklinGothicMediCondC; }
+
+/* line 452, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.block3 {
+  background: #000 url(../images/bg-block3.jpg) top center no-repeat;
+  padding: 85px 0; }
+  /* line 456, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .block3 .login {
+    width: 233px;
+    margin: auto;
+    background: url(../images/i/MergedLayers.png) top center no-repeat;
+    padding-top: 30px; }
+    /* line 461, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .block3 .login li {
+      display: inline-block;
+      background: url(../images/i/login.png) left;
+      width: 82px;
+      height: 82px; }
+      /* line 466, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+      .block3 .login li:last-child {
+        background-position: right;
+        float: right; }
+      /* line 470, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+      .block3 .login li a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+  /* line 477, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .block3 #reload {
+    width: 100%;
+    margin: 0 auto 530px;
+    display: block; }
+  /* line 482, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .block3 input {
+    display: block;
+    margin: auto;
+    opacity: .2;
+    cursor: not-allowed !important; }
+    /* line 487, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .block3 input.link {
+      border: 3px solid #e6dcc5;
+      width: 556px;
+      height: 50px;
+      background-color: rgba(230, 220, 197, 0);
+      color: rgba(226, 221, 207, 0.55);
+      font: italic 20px BaskervilleCyrillic;
+      margin-top: 250px;
+      padding-left: 20px; }
+    /* line 497, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .block3 input.active {
+      opacity: 1;
+      cursor: pointer !important; }
+  /* line 502, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .block3 .youtube {
+    width: 1280px;
+    display: block;
+    margin: 10px auto;
+    border: 3px solid #ac9866;
+    border-left: none;
+    border-right: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    /* line 517, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .block3 .youtube iframe {
+      width: 100%;
+      margin: 15px 0; }
+    /* line 521, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .block3 .youtube .wrapper {
+      width: 225px;
+      height: 126px;
+      margin: 15px;
+      display: inline-block;
+      cursor: pointer; }
+      /* line 530, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+      .block3 .youtube .wrapper iframe {
+        display: none; }
+      /* line 533, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+      .block3 .youtube .wrapper.active {
+        position: fixed;
+        z-index: 999;
+        top: 50%;
+        left: 50%;
+        width: 1000px;
+        height: 608px;
+        margin: -304px 0 0 -500px;
+        padding: 65px 73px;
+        box-sizing: border-box;
+        background: url(../images/video-popup.jpg) center no-repeat; }
+        /* line 544, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+        .block3 .youtube .wrapper.active iframe {
+          display: block;
+          width: 854px;
+          height: 480px; }
+
+/* line 554, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid01 {
+  background: url(../images/vid1.png) center no-repeat; }
+
+/* line 558, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid02 {
+  background: url(../images/vid2.png) center no-repeat; }
+
+/* line 562, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid03 {
+  background: url(../images/vid3.png) center no-repeat; }
+
+/* line 566, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid04 {
+  background: url(../images/vid4.png) center no-repeat; }
+
+/* line 570, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid05 {
+  background: url(../images/vid5.png) center no-repeat; }
+
+/* line 574, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid06 {
+  background: url(../images/vid6.png) center no-repeat; }
+
+/* line 578, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid07 {
+  background: url(../images/vid7.png) center no-repeat; }
+
+/* line 582, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid08 {
+  background: url(../images/vid8.png) center no-repeat; }
+
+/* line 586, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid09 {
+  background: url(../images/vid9.png) center no-repeat; }
+
+/* line 590, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid10 {
+  background: url(../images/vid10.png) center no-repeat; }
+
+/* line 594, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid11 {
+  background: url(../images/vid11.png) center no-repeat; }
+
+/* line 598, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid12 {
+  background: url(../images/vid12.png) center no-repeat; }
+
+/* line 602, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid13 {
+  background: url(../images/vid13.png) center no-repeat; }
+
+/* line 606, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid14 {
+  background: url(../images/vid14.png) center no-repeat; }
+
+/* line 610, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid15 {
+  background: url(../images/vid15.png) center no-repeat; }
+
+/* line 614, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid16 {
+  background: url(../images/vid16.png) center no-repeat; }
+
+/* line 618, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid17 {
+  background: url(../images/vid17.png) center no-repeat; }
+
+/* line 622, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid18 {
+  background: url(../images/vid18.png) center no-repeat; }
+
+/* line 626, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid19 {
+  background: url(../images/vid19.png) center no-repeat; }
+
+/* line 630, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid20 {
+  background: url(../images/vid20.png) center no-repeat; }
+
+/* line 634, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid21 {
+  background: url(../images/vid21.png) center no-repeat; }
+
+/* line 638, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid22 {
+  background: url(../images/vid22.png) center no-repeat; }
+
+/* line 642, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid23 {
+  background: url(../images/vid23.png) center no-repeat; }
+
+/* line 646, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid24 {
+  background: url(../images/vid24.png) center no-repeat; }
+
+/* line 650, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid25 {
+  background: url(../images/vid25.png) center no-repeat; }
+
+/* line 654, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid26 {
+  background: url(../images/vid26.png) center no-repeat; }
+
+/* line 658, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid27 {
+  background: url(../images/vid27.png) center no-repeat; }
+
+/* line 662, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid28 {
+  background: url(../images/vid28.png) center no-repeat; }
+
+/* line 666, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid29 {
+  background: url(../images/vid29.png) center no-repeat; }
+
+/* line 670, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid30 {
+  background: url(../images/vid30.png) center no-repeat; }
+
+/* line 674, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid31 {
+  background: url(../images/vid31.png) center no-repeat; }
+
+/* line 678, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid32 {
+  background: url(../images/vid32.png) center no-repeat; }
+
+/* line 682, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid33 {
+  background: url(../images/vid33.png) center no-repeat; }
+
+/* line 686, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.vid34 {
+  background: url(../images/vid34.png) center no-repeat; }
+
+/* line 690, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+footer {
+  background: url(../images/background_wood.jpg) center no-repeat;
+  background-size: cover;
+  color: #e5ddc9;
+  line-height: 1.5;
+  color: #e5ddc9;
+  font-size: 18px;
+  padding: 120px 10%; }
+  /* line 699, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  footer .rules {
+    width: 100%; }
+    /* line 703, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    footer .rules li a {
+      text-decoration: underline; }
+
+/* line 710, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.article {
+  margin-top: 80px;
+  padding-bottom: 50px;
+  background-color: #133c2c; }
+  /* line 714, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .article > .bg {
+    background-size: cover;
+    width: 100%;
+    height: 50vh !important;
+    background-attachment: fixed; }
+  /* line 720, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .article p {
+    width: 1024px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #e0d8c4;
+    text-indent: 20px; }
+    /* line 727, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .article p span {
+      display: block;
+      margin: 20px 0; }
+    /* line 731, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+    .article p img {
+      max-width: 500px;
+      float: left;
+      margin: 0 20px; }
+      /* line 735, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+      .article p img:nth-child(2n+1) {
+        float: right; }
+
+/* line 742, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art1 {
+  background: url(../images/art4.jpg) center no-repeat;
+  background-size: cover; }
+
+/* line 747, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art2 {
+  background: url(../images/art2.jpg) top center no-repeat;
+  background-size: cover; }
+
+/* line 752, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art3 {
+  background: url(../images/art3.jpg) center no-repeat;
+  background-size: cover; }
+
+/* line 757, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art4 {
+  background: url(../images/art1.jpg) center no-repeat;
+  background-size: cover; }
+
+/* line 762, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art5 {
+  background: url(../images/art51.jpg) center no-repeat;
+  background-size: cover; }
+
+/* line 767, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art6 {
+  background: url(../images/art61.jpg) center no-repeat; }
+
+/* line 771, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art7 {
+  background: url(../images/art71.jpg) center no-repeat; }
+
+/* line 775, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art8 {
+  background: url(../images/art81.jpg) center top no-repeat;
+  background-size: cover; }
+
+/* line 780, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art9 {
+  background: url(../images/art91.jpg) center top no-repeat;
+  background-size: 125%; }
+
+/* line 785, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art10 {
+  background: url(../images/art103.jpg) center top no-repeat;
+  background-size: 125%; }
+
+/* line 790, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art11 {
+  background: url(../images/art113.jpg) center top no-repeat; }
+
+/* line 795, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art12 {
+  background: url(../images/art121.jpg) center top no-repeat;
+  background-size: 125%; }
+
+/* line 800, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art13 {
+  background: url(../images/art131.jpg) center no-repeat;
+  background-size: cover; }
+
+/* line 805, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art14 {
+  background: url(../images/art141.jpg) center top no-repeat;
+  background-size: 125%; }
+
+/* line 810, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art15 {
+  background: url(../images/art151.jpg) top left no-repeat;
+  background-size: cover; }
+
+/* line 816, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art17 {
+  background: url(../images/art173.jpg) center top no-repeat;
+  background-size: cover; }
+
+/* line 821, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art18 {
+  background: url(../images/art181.jpg) center 20% no-repeat;
+  background-size: cover; }
+
+/* line 826, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.art19 {
+  background: url(../images/art191.jpg) center no-repeat;
+  background-size: cover; }
+
+/* line 831, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+.alco {
+  background: #fff url(../images/i/alco.jpg) center no-repeat;
+  width: 100%;
+  height: 103px;
+  display: block; }
+
+@media (max-width: 1280px) {
+  /* line 839, C:/Users/semak/Google Диск/Work/UMH/tullamore/css/style.scss */
+  .bgvideo {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */
